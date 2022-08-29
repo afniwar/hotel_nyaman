@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hotel_nyaman/page/page_splash.dart';
 
 void main() => runApp(const MyApp());
 
@@ -7,6 +8,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp();
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: PageSplash(),
+    );
   }
 }
